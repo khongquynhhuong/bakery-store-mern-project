@@ -1,0 +1,123 @@
+
+.mainNav {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  align-items: center;
+
+  background: #ff8f91;
+  padding: 6px 0;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.mainNav__link,
+.mainNav a {
+  color: #e0493b;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mainNav__link--button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.mainNav__link:hover,
+.mainNav a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: #5f0000;
+  text-decoration: none;
+}
+
+.mainNav__item {
+  position: relative;
+}
+
+.mainNav__dropdown {
+  position: absolute;
+  top: 100%; /* sát cạnh dưới nút Menu, không tạo khoảng hở */
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 150px;
+  background: #fff7ea;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  padding: 8px 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+}
+
+.mainNav__dropdown-item {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  color: #e0493b;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.mainNav__dropdown-item:hover {
+  background: rgba(255, 143, 145, 0.2);
+  color: #5f0000;
+  font-weight: 600;
+}
+
+.mainNav__item--has-dropdown:hover .mainNav__dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 1024px) {
+  .mainNav {
+    gap: 32px;
+    font-size: 16px;
+    padding: 14px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainNav {
+    gap: 20px;
+    font-size: 15px;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mainNav a {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainNav {
+    gap: 12px;
+    font-size: 13px;
+    padding: 10px 0;
+  }
+
+  .mainNav a {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+

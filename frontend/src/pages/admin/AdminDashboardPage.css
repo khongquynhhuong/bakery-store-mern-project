@@ -1,0 +1,47 @@
+.admin-dashboard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e6d4c9;
+}
+
+.admin-dashboard__title {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+.admin-dashboard__lead {
+  margin: 0 0 24px;
+  font-size: 15px;
+  color: #6b6b6b;
+  line-height: 1.45;
+}
+
+.admin-dashboard__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.admin-dashboard__link {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #e0493b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 2px 8px rgba(224, 73, 59, 0.25);
+}
+
+.admin-dashboard__link:hover {
+  background: #c73333;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(224, 73, 59, 0.3);
+}

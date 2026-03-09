@@ -1,0 +1,80 @@
+/* Admin: đồng bộ với theme customer (cream, đỏ cam) */
+.admin-layout {
+  min-height: 100vh;
+  background: var(--admin-cream, #fff7ea);
+}
+
+.admin-layout__header {
+  background: #fff;
+  color: #2b2b2b;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid #e6d4c9;
+}
+
+.admin-layout__brand a {
+  color: #e0493b;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+.admin-layout__brand a:hover {
+  color: #c73333;
+}
+
+.admin-layout__nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-layout__link {
+  color: #6b6b6b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.admin-layout__link:hover {
+  background: rgba(224, 73, 59, 0.08);
+  color: #e0493b;
+}
+
+.admin-layout__link[aria-current="page"] {
+  background: #e0493b;
+  color: #fff;
+}
+
+.admin-layout__logout {
+  background: transparent;
+  border: 1px solid #e6d4c9;
+  color: #2b2b2b;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.admin-layout__logout:hover {
+  background: rgba(224, 73, 59, 0.08);
+  border-color: #e0493b;
+  color: #e0493b;
+}
+
+.admin-layout__main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px;
+}

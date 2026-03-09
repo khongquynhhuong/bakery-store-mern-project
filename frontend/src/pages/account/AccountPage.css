@@ -1,0 +1,113 @@
+.account-page {
+  background: #fff7ea;
+  min-height: 100vh;
+  padding: 32px 20px 48px;
+}
+
+.account-page__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.account-page__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #e0493b;
+  margin: 0 0 24px;
+}
+
+.account-page__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.account-section {
+  background: #ffeef4;
+  border: 1px solid #f7b0c6;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.account-section__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e0493b;
+  margin: 0;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #f7b0c6;
+}
+
+.account-section__body {
+  padding: 18px;
+}
+
+.account-section__empty {
+  margin: 0;
+  font-size: 14px;
+  color: #5a4045;
+}
+
+.account-section__empty a {
+  color: #e0493b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.account-section__empty a:hover {
+  text-decoration: underline;
+}
+
+.order-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order-list__item {
+  padding: 8px 0;
+  font-size: 14px;
+  color: #5a4045;
+  border-bottom: 1px solid rgba(247, 176, 198, 0.5);
+}
+
+.order-list__item:last-child {
+  border-bottom: none;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.account-info__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.account-info__label {
+  font-size: 14px;
+  color: #5a4045;
+  min-width: 90px;
+}
+
+.account-info__value {
+  font-size: 14px;
+  color: #3b242a;
+  font-weight: 500;
+}
+
+.account-info__value--masked {
+  color: #6b6b6b;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .account-page__grid {
+    grid-template-columns: 1fr;
+  }
+}

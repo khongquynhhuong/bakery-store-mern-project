@@ -1,0 +1,153 @@
+.order-status-page {
+  background: #fff7ea;
+  min-height: 100vh;
+  padding: 32px 20px 48px;
+}
+
+.order-status-page__inner {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.order-status-page__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e0493b;
+  margin: 0 0 8px;
+}
+
+.order-status-page__id {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #5a4045;
+}
+
+.order-status-page__id strong {
+  word-break: break-all;
+  color: #3b242a;
+}
+
+.order-status-page__badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #e0493b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.order-status-page__section {
+  background: #ffeef4;
+  border: 1px solid #f7b0c6;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+
+.order-status-page__section h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e0493b;
+}
+
+.order-status-page__section p {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #5a4045;
+}
+
+.order-status-page__note {
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.order-status-page__items {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.order-status-page__items li {
+  padding: 4px 0;
+  font-size: 14px;
+  color: #5a4045;
+}
+
+.order-status-page__total {
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid #f7b0c6;
+  font-size: 15px;
+  color: #3b242a;
+}
+
+.order-status-page__total strong {
+  color: #e0493b;
+}
+
+.order-status-page__loading,
+.order-status-page__error {
+  margin: 0 0 16px;
+  font-size: 15px;
+  color: #5a4045;
+}
+
+.order-status-page__error {
+  color: #e0493b;
+}
+
+.order-status-page__back {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #e0493b;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.order-status-page__back:hover {
+  text-decoration: underline;
+}
+
+.order-status-page__text {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #5a4045;
+}
+
+.order-status-page__form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.order-status-page__input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #f7b0c6;
+  font-size: 14px;
+  outline: none;
+}
+
+.order-status-page__input:focus {
+  border-color: #e0493b;
+}
+
+.order-status-page__btn {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  background: #e0493b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.order-status-page__btn:hover {
+  background: #c63830;
+}

@@ -1,0 +1,168 @@
+.menu-home {
+  background: transparent;
+  padding: 28px 24px 40px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.menu-home__title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #e0493b;
+  margin: 0 0 20px;
+  letter-spacing: 0.02em;
+}
+
+.menu-home__category {
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+.menu-home__category-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #e0493b;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.menu-home__category-arrow {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.menu-home__category-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.menu-home__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.menu-home__card {
+  background: #ffeef4;
+  border: 1px solid #f7b0c6;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-home__card-img-wrap {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 6px;
+}
+
+.menu-home__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-home__card-name {
+  margin: 0 0 2px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3b242a;
+  line-height: 1.3;
+}
+
+.menu-home__card-price {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: #5a4045;
+}
+
+.menu-home__card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  padding: 7px 12px;
+  background: #e0493b;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu-home__card-btn-arrow {
+  font-size: 14px;
+}
+
+.menu-home__see-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #e0493b;
+  text-decoration: none;
+}
+
+.menu-home__see-more:hover {
+  text-decoration: underline;
+}
+
+.menu-home__caret {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 12px;
+  transform: scaleY(0.8);
+}
+
+.menu-home__loading,
+.menu-home__error,
+.menu-home__empty {
+  text-align: center;
+  color: #5a4045;
+  margin: 0;
+  padding: 20px 16px;
+}
+
+.menu-home__error {
+  color: #e0493b;
+}
+
+@media (max-width: 1024px) {
+  .menu-home__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-home {
+    padding: 20px 16px 32px;
+  }
+
+  .menu-home__title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .menu-home__category {
+    margin-bottom: 18px;
+  }
+
+  .menu-home__cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+}
+
