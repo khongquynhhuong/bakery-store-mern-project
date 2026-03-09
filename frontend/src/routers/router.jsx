@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App.jsx";
 import Home from "../pages/home/Home.jsx";
-import SignIn from "../pages/signin/signin.jsx";
+import SignIn from "../pages/signin/signIn.jsx";
 import SignUp from "../pages/signup/signUp.jsx";
 import CategoryCakes from "../pages/menu/CategoryCakes.jsx";
 import AboutPage from "../pages/about/AboutPage.jsx";
