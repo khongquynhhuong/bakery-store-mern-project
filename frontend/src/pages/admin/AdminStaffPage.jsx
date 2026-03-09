@@ -72,7 +72,7 @@ export default function AdminStaffPage() {
         <input type="password" placeholder="Password" value={form.password} onChange={(e) => setForm({...form, password: e.target.value})} required minLength={6} />
         <input type="text" placeholder="Full name" value={form.fullName} onChange={(e) => setForm({...form, fullName: e.target.value})} />
         <input type="text" placeholder="Phone number" value={form.phone} onChange={(e) => setForm({...form, phone: e.target.value})} />
-        <button type="submit">Thêm nhân viên</button>
+        <button type="submit">Add staff</button>
       </form>
 
       <div className="staff-list">
