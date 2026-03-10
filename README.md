@@ -29,7 +29,6 @@ Customers can browse cakes and place orders; employees manage orders; admins man
   - Manage staff accounts (create / delete employees).
   - View performance of each employee (orders handled, total revenue, excluding cancelled orders).
 
-For backend details see `docs/BACKEND_USECASES.md`.
 
 ---
 
